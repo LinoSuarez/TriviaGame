@@ -1,0 +1,45 @@
+body {
+    background-color: rgba(0, 0, 0, 0.034);
+}
+#container {
+
+}
+#nextBtn {
+
+}
+#question {
+
+}
+#option1, #option2, #option3 {
+    background-color: rgb(216, 216, 216);
+/* padding: 10px 0; */
+    margin: 10px auto;
+}
+#option1:hover, #option2:hover, #option3:hover {
+    background-color: rgb(190, 190, 190);
+}
+#option1:active, option2:active, option3:active {
+    background-color: rgb(161, 161, 161);
+}
+.answers {
+    height: 40px;
+    width: 200px;
+    line-height: 40px;
+    text-align: center;
+    text-align: center;
+    margin: auto;
+}
+#content {
+    text-align: center;
+    height: 300px;
+    width: 500px;
+    border: 1px solid gray;
+}
+button {
+    height: 100px;
+    width: 200px;
+    position: relative;
+    top: 75px;
+    text-align: center;
+
+}

@@ -1,0 +1,23 @@
+<!-- Testing how jQuery work with radio buttons -->
+<html>
+    <head>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript"></script>        
+    </head>
+    <body>
+        <h1>Trivia</h1>
+        <label> hi</label><input name="q1" type="radio" id="radioButton" value=1>
+        <label> hi</label><input name="q1" type="radio" id="radioButton" value=2>
+        <label> hi</label><input name="q1" type="radio" id="radioButton" value=3>
+        <input type="button" id="btnGetValue" Value="Get Value" />
+        <div id="texx"></div>
+        <script>
+            $(document).ready(function(){
+                $('#btnGetValue').click(function() {
+                    var selValue = $('input[name=q1]:checked').val(); 
+                    $("#texx").append('<br/>Selected Radio Button Value is : <b>' + selValue + '</b>');
+                });
+            });
+        </script>
+    </body>
+</html>
